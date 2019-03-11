@@ -8,7 +8,7 @@ available in the browser without any extra configuration.
 
 - Create a docker network where container could be automatically added:
 ```
-docker network create reverse-proxy
+docker network create -d bridge reverse-proxy
 ```
 **Every container must be configured to belong to this network, as the container (Traefik) of this image**
 
